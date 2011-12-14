@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hessiancpp", "hessiancpp\hessiancpp.vcproj", "{B5E713D6-9EDF-4E82-B1D4-48AC4A7C31B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8B0B968E-0F47-4F8F-A48B-5C05FC015B50} = {8B0B968E-0F47-4F8F-A48B-5C05FC015B50}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl++w", "sslpp\vsnet2003\ssl++w.vcproj", "{8B0B968E-0F47-4F8F-A48B-5C05FC015B50}"
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5E713D6-9EDF-4E82-B1D4-48AC4A7C31B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5E713D6-9EDF-4E82-B1D4-48AC4A7C31B0}.Debug|Win32.Build.0 = Debug|Win32
+		{B5E713D6-9EDF-4E82-B1D4-48AC4A7C31B0}.Release|Win32.ActiveCfg = Release|Win32
+		{B5E713D6-9EDF-4E82-B1D4-48AC4A7C31B0}.Release|Win32.Build.0 = Release|Win32
+		{8B0B968E-0F47-4F8F-A48B-5C05FC015B50}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8B0B968E-0F47-4F8F-A48B-5C05FC015B50}.Debug|Win32.Build.0 = Debug|Win32
+		{8B0B968E-0F47-4F8F-A48B-5C05FC015B50}.Release|Win32.ActiveCfg = Release|Win32
+		{8B0B968E-0F47-4F8F-A48B-5C05FC015B50}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

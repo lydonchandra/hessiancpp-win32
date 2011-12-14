@@ -1,0 +1,24 @@
+hessiancpp
+A Hessian C++ implementation
+
+Copyright (C) 2004 Aldratech Ltd.
+Released under the terms of the GNU Lesser General Public License.
+See the LICENSE file for licensing information.
+
+The hessiancpp library consists of:
+- simple HTTP library with SSL support, SSLPP (included);
+- implementation of the Hessian protocol;
+- GZIP support both in the client and in the server (the hessian server side
+code has a small, non-intrusive addition that compresses the output stream if
+the size of the reply exceeds a certain value); we've found this to *greatly*
+reduce the size of the messages for replies of type List<LargeBean> or exception
+stack traces (that are mostly irrelevant for C++);
+- a hessian_proxy class that can be used to dynamically invoke remote methods.
+
+Please see the INSTALL file for installation info.
+Please see main.cpp for example usage.
+
+CONTACT
+* Project web page: http://sourceforge.net/hessiancpp
+* Developer: Radu-Adrian Popescu, email radu.popescu@aldratech.com
+* Commercial inquiries: office@aldratech.com
