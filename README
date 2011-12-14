@@ -1,0 +1,7 @@
+Problems building hessiancpp (http://hessiancpp.sourceforge.net/) ?
+
+1. Open the sln file using Visual Studio 2008 (other version untested)
+2. Put the correct boost include path in the .vcproj project file
+3. Build the solution
+
+The openssl lib was downloaded from http://www.ie7pro.com/openssl.html
