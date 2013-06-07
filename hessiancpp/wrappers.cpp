@@ -258,7 +258,7 @@ namespace hessian {
             // The char-like objects in a basic_string object
             // shall be stored contiguously.
             // s_work, &(*str.end()), s_next);
-            s_work, &str[0] + str.size(), s_next);
+            s_work, s_head + str.size(), s_next);
         wlen = s_next - s_head;
         if (res == codecvt_base::partial)
         {
