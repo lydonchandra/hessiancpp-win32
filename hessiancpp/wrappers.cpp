@@ -253,7 +253,12 @@ namespace hessian {
         codecvt_base::result res =
           std::use_facet<codecvt_type>(loc).out(mystate,
             w_work, w_tail, w_next,
-            s_work, &(*str.end()), s_next);
+            // Fix VC2010 _DEBUG_ERROR("string iterator not dereferencable")
+            // depend on C++11 standard: 21.4.1.5
+            // The char-like objects in a basic_string object
+            // shall be stored contiguously.
+            // s_work, &(*str.end()), s_next);
+            s_work, s_head + str.size(), s_next);
         wlen = s_next - s_head;
         if (res == codecvt_base::partial)
         {
